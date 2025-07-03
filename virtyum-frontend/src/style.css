@@ -1,0 +1,95 @@
+/**
+ * @fileoverview Estilos personalizados para la aplicación Virtyum
+ * @description Estilos adicionales para componentes específicos y funcionalidades personalizadas
+ * @author Virtyum Frontend Team
+ * @version 1.0.0
+ */
+
+/* ================================
+   TABLA CON SCROLL FIJO
+   ================================ */
+
+/**
+ * Contenedor principal de tabla con scroll vertical limitado
+ * Diseñado para mostrar aproximadamente 10 filas + header
+ */
+.table-scroll-container {
+  max-height: 650px;
+  overflow-y: auto;
+  overflow-x: auto;
+}
+
+/**
+ * Header fijo de tabla que permanece visible durante el scroll
+ */
+.table-sticky-header {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  background-color: var(--bs-gray-100) !important;
+}
+
+/**
+ * Mejoras visuales para el scroll de la tabla
+ */
+.table-scroll-container::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+.table-scroll-container::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 3px;
+}
+
+.table-scroll-container::-webkit-scrollbar-thumb {
+  background: #c1c1c1;
+  border-radius: 3px;
+}
+
+.table-scroll-container::-webkit-scrollbar-thumb:hover {
+  background: #a8a8a8;
+}
+
+/* ================================
+   RESPONSIVE ADJUSTMENTS
+   ================================ */
+
+/**
+ * Ajustes para dispositivos móviles
+ */
+@media (max-width: 768px) {
+  .table-scroll-container {
+    max-height: 500px;
+  }
+}
+
+/**
+ * Ajustes para pantallas pequeñas
+ */
+@media (max-width: 576px) {
+  .table-scroll-container {
+    max-height: 400px;
+  }
+}
+
+/* ================================
+   CLASES UTILITARIAS
+   ================================ */
+
+/**
+ * Para elementos que necesitan z-index alto en contexto de tabla
+ */
+.table-high-z-index {
+  z-index: 1050;
+}
+
+/**
+ * Mejora la legibilidad en celdas de tabla con contenido largo
+ */
+.table-cell-ellipsis {
+  max-width: 200px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+} 
