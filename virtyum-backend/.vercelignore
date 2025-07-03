@@ -1,0 +1,7 @@
+src/
+server-local.js
+*.md
+.git/
+node_modules/
+.env.local
+.env.example 

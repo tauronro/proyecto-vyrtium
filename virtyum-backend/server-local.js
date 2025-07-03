@@ -4,8 +4,8 @@ require('dotenv').config();
 const express = require('express');
 const mongoose = require('mongoose');
 const cors = require('cors');
-const taskRoutes = require('./routes/taskRoutes');
-const serviceRoutes = require('./routes/serviceRoutes');
+const taskRoutes = require('./src/routes/taskRoutes');
+const serviceRoutes = require('./src/routes/serviceRoutes');
 
 // Verificar las variables de entorno
 console.log('Verificando variables de entorno:');
