@@ -14,8 +14,8 @@ const app = express();
 // Middleware
 app.use(cors({
   origin: [
-    'https://virtyum-frontend-6rwfpqv5g-tauronros-projects.vercel.app',
-    'https://virtyum-frontend-chi.vercel.app',
+    'https://virtyum-frontend-lemon.vercel.app',
+    'https://virtyum-frontend-q163wctcg-tauronros-projects.vercel.app',
     'http://localhost:3000',
     'http://localhost:5173'
   ],
