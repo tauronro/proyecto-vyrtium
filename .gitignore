@@ -1,0 +1,154 @@
+# ================================
+# GITIGNORE PARA PROYECTO VIRTYUM
+# Backend (Node.js) + Frontend (React/Vite)
+# ================================
+
+# ===== DEPENDENCIAS =====
+node_modules/
+*/node_modules/
+
+# ===== VARIABLES DE ENTORNO =====
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+*.env
+
+# ===== ARCHIVOS DE CONSTRUCCIÓN =====
+# Frontend (Vite/React)
+virtyum-frontend/dist/
+virtyum-frontend/build/
+virtyum-frontend/.vite/
+
+# Backend
+virtyum-backend/dist/
+virtyum-backend/build/
+
+# ===== LOGS =====
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+lerna-debug.log*
+.pnpm-debug.log*
+
+# ===== ARCHIVOS TEMPORALES =====
+*.tmp
+*.temp
+.cache/
+.parcel-cache/
+
+# ===== SISTEMA OPERATIVO =====
+# Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+*.cab
+*.msi
+*.msix
+*.msm
+*.msp
+*.lnk
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+._*
+
+# Linux
+*~
+.fuse_hidden*
+.directory
+.Trash-*
+
+# ===== EDITORES/IDEs =====
+# Visual Studio Code
+.vscode/
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+
+# JetBrains IDEs
+.idea/
+*.swp
+*.swo
+*~
+
+# Sublime Text
+*.sublime-project
+*.sublime-workspace
+
+# Vim
+.*.swp
+.*.swo
+Session.vim
+.netrwhist
+
+# ===== RUNTIME Y PROCESOS =====
+pids
+*.pid
+*.seed
+*.pid.lock
+
+# ===== COBERTURA DE PRUEBAS =====
+coverage/
+.nyc_output/
+.coverage/
+*.lcov
+
+# ===== ARCHIVOS DE CONFIGURACIÓN LOCAL =====
+.npm
+.eslintcache
+.stylelintcache
+
+# ===== YARN =====
+.yarn-integrity
+yarn.lock
+.pnp.*
+.yarn/
+
+# ===== VERCEL =====
+.vercel
+
+# ===== NETLIFY =====
+.netlify/
+
+# ===== RAILWAY =====
+.railway/
+
+# ===== OTROS SERVICIOS DE DEPLOY =====
+.now
+.next/
+out/
+
+# ===== BASES DE DATOS LOCALES =====
+*.sqlite
+*.sqlite3
+*.db
+
+# ===== CERTIFICADOS Y CLAVES =====
+*.pem
+*.p12
+*.key
+*.crt
+*.cert
+ssl/
+
+# ===== ARCHIVOS DE BACKUP =====
+*.bak
+*.backup
+*.old
+
+# ===== ARCHIVOS ESPECÍFICOS DEL PROYECTO =====
+# Documentos temporales
+docs/temp/
+temp/
+.temp/
+
+# Archivos de configuración específicos (si es necesario)
+# config/local.js
+# config/production.js 
